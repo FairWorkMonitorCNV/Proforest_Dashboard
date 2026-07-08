@@ -9,25 +9,47 @@
       height: 100%;
       margin: 0;
       padding: 0;
-      overflow: hidden;
       background-color: #3b2314;
     }
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 10%;
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .report-wrapper {
       width: 80%;
+      flex: 1 1 auto;
+      min-height: 0;
+    }
+    iframe {
+      width: 100%;
       height: 100%;
       border: none;
+      display: block;
+    }
+    .instructions {
+      width: 80%;
+      flex-shrink: 0;
+      color: #f5e9da;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      text-align: center;
+      line-height: 1.5;
+      padding: 14px 0 18px 0;
     }
   </style>
 </head>
 <body>
-  <iframe
-    title="Palmoil_Indonesia_2026_Iframe_Dashboard"
-    src="https://app.powerbi.com/view?r=eyJrIjoiYjk0NWY3MzUtODlhZi00MjdjLWFmY2UtOTgwNzhkMjEyYjA0IiwidCI6IjY4MDM3NmQ5LTQ4MGYtNDdmNi1iOGFmLTc0NmY2OTI1NGYwMyIsImMiOjh9"
-    frameborder="0"
-    allowFullScreen="true">
-  </iframe>
+  <div class="report-wrapper">
+    <iframe
+      title="Palmoil_Indonesia_2026_Iframe_Dashboard"
+      src="https://app.powerbi.com/view?r=eyJrIjoiYjk0NWY3MzUtODlhZi00MjdjLWFmY2UtOTgwNzhkMjEyYjA0IiwidCI6IjY4MDM3NmQ5LTQ4MGYtNDdmNi1iOGFmLTc0NmY2OTI1NGYwMyIsImMiOjh9"
+      frameborder="0"
+      allowFullScreen="true">
+    </iframe>
+  </div>
+  <div class="instructions">
+    Hover your mouse over a visual to reveal a question mark in the top right corner. Hovering over it shows the full survey question in English and Bahasa Indonesia.
+  </div>
 </body>
 </html>
